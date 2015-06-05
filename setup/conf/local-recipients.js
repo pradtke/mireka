@@ -8,21 +8,25 @@
 	forward it to other addresses.  
 */
 
+include("conf/jive-people.js");
+
 localRecipientDestinations = deepList([
 
 	/*
 		ENTER YOUR RECIPIENT-DESTINATION MAPPINGS HERE
 	*/
+
+    setup(AnyUserMaildropDestinationMapper, {maildropRepository: maildropRepository,
+        jiveForwards: jivePeople
+    }),
 	
-	
-	
-	/* 
-		comment out if POP service is not active
-	*/
-	setup(GlobalUsersMaildropDestinationMapper, {
-		maildropRepository: maildropRepository,
-		users: globalUsers
-	}),
+	///*
+	//	comment out if POP service is not active
+	//*/
+	//setup(GlobalUsersMaildropDestinationMapper, {
+	//	maildropRepository: maildropRepository,
+	//	users: globalUsers
+	//}),
 	
 	/*
 		Postmaster alias

@@ -1,16 +1,14 @@
 package mireka.smtp.server;
 
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
 import mireka.Version;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.subethamail.smtp.MessageHandlerFactory;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 
 public class SMTPServer extends org.subethamail.smtp.server.SMTPServer {
     private final Logger logger = LoggerFactory.getLogger(SMTPServer.class);

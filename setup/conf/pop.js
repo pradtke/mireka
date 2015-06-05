@@ -20,10 +20,9 @@ setup(PopMailImporter, {
 	Configure server name, bind address, etc. here.
 */
 setup(PopServer, {
-	loginSpecification: setup(GlobalUsersLoginSpecification, {
-		users: globalUsers
-	}),
+    loginSpecification: setup(AnyUserLoginSpecification, {}),
 	principalMaildropTable: setup(GlobalUsersPrincipalMaildropTable),
+    port: 1100,
 	maildropRepository: maildropRepository,
 
 	// Uncomment to specify TLS configuration specific to this service.

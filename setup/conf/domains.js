@@ -3,9 +3,4 @@
 	mail server. 
 */
 
-localDomains = setup(InlineDomainRegistry, {
-	remoteParts: [
-		// "example.com",
-		// "[192.0.2.0]",
-	]
-});
+localDomains = setup(AnyRemotePart, { });

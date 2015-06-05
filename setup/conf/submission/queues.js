@@ -54,17 +54,16 @@ mailToHostTransmitter = setup(MailToHostTransmitter, {
 	logIdFactory: logIdFactory,
 });
 
-immediateSender = setup(DirectImmediateSender, {
-	mailToHostTransmitter: mailToHostTransmitter,
-});
+//immediateSender = setup(DirectImmediateSender, {
+//	mailToHostTransmitter: mailToHostTransmitter,
+//});
 
 /* uncomment to send all outgoing mails through a smarthost */
-/*
 immediateSender = setup(IndirectImmediateSender, {
 	mailToHostTransmitter: mailToHostTransmitter,
 	backendServer: backendServer,
 });
-*/
+
 
 dsnMailCreator = setup(DsnMailCreator, {
 	reportingMtaName: helo, 

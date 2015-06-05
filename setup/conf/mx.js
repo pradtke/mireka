@@ -55,6 +55,7 @@ mxMessageHandler = setup(MessageHandlerFactoryImpl, {
 */
 mx = setup(SMTPServer(mxMessageHandler), {
 	hostName: helo,
+    port: 3025,
 	/* bindAddress: "192.0.2.0", */
 	
 	/* uncomment to enable STARTTLS if JSSE is correctly configured */

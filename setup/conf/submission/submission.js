@@ -109,7 +109,8 @@ authenticationHandlerFactory =
 submission = setup(SubmissionServer(submissionMessageHandler), {
 	authenticationHandlerFactory: authenticationHandlerFactory,
 	// bindAddress: "192.0.2.0",
-	hostName: helo,
+    port: 3026,
+    hostName: helo,
 	/* uncomment to enable STARTTLS if JSSE is correctly configured */
 	/* enableTLS: true, */
 });

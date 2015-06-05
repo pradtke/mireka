@@ -1,9 +1,5 @@
 package mireka.pop;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.UnsupportedEncodingException;
-
 import mireka.destination.MailDestination;
 import mireka.pop.store.Maildrop;
 import mireka.pop.store.MaildropAppender;
@@ -12,9 +8,12 @@ import mireka.smtp.EnhancedStatus;
 import mireka.smtp.RejectExceptionExt;
 import mireka.transmission.LocalMailSystemException;
 import mireka.transmission.Mail;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
 
 /**
  * MaildropDestination puts the mail into the specified POP3 maildrop.

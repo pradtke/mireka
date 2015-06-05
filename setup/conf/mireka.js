@@ -39,8 +39,8 @@ clientFactory = setupDefault(ClientFactory, {
 	both proxy and null client mode.
 */
 backendServer = setup(BackendServer, {
-	host: "backend.example.com",
-	//port: 587,
+	host: "mail.jiveland.com",
+	port: 25,
 	//user: "office-server",
 	//password: "CHANGEIT",
 });
